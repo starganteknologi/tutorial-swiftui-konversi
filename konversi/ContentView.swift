@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    var dari: String
+    var ke: String
+    var input: Double
     var body: some View {
         Text("Hello, world!")
             .padding()
