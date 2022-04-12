@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    var dari: String
-    var ke: String
-    var input: Double
+    var dari: String = "m"
+    var ke: String = "m"
+    @State var input: Double = 0.0
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Form {
+            TextField("input", value: $input, format: .number)
+        }
     }
 }
 
