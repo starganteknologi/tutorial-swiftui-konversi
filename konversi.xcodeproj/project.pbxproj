@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DBAEC312805FEA700CB35AC /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 9DBAEC302805FEA700CB35AC /* Collections */; };
 		9DC7D0ED28055EBE0080CF85 /* konversiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7D0EC28055EBE0080CF85 /* konversiApp.swift */; };
 		9DC7D0EF28055EBE0080CF85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7D0EE28055EBE0080CF85 /* ContentView.swift */; };
 		9DC7D0F128055EC00080CF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC7D0F028055EC00080CF85 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DBAEC312805FEA700CB35AC /* Collections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = konversi;
+			packageProductDependencies = (
+				9DBAEC302805FEA700CB35AC /* Collections */,
+			);
 			productName = konversi;
 			productReference = 9DC7D0E928055EBE0080CF85 /* konversi.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 9DC7D0E028055EBE0080CF85;
+			packageReferences = (
+				9DBAEC2F2805FEA700CB35AC /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 9DC7D0EA28055EBE0080CF85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DBAEC2F2805FEA700CB35AC /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DBAEC302805FEA700CB35AC /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DBAEC2F2805FEA700CB35AC /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9DC7D0E128055EBE0080CF85 /* Project object */;
 }
